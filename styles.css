@@ -1,1 +1,104 @@
-h1 {color:blue}
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #0073e6;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #004080;
+}
+
+h3 {
+    text-align: center;
+    color: #0073e6;
+    margin-top: 1.5rem;
+}
+
+.news-block {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.news-block p {
+    margin: 0.5rem 0;
+}
+
+/* Tablolar */
+table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 2px solid;
+}
+
+/* Araba Markaları Tablosu */
+.red-border {
+    width: 90%;
+}
+
+.red-border th, .red-border td {
+    border-color: red;
+}
+
+/* Kişisel Bilgiler Tablosu */
+.blue-border {
+    width: 90%;
+}
+
+.blue-border th, .blue-border td {
+    border-color: blue;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004080;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+div{
+    width: 300px;
+    margin: auto;
+}
