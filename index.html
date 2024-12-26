@@ -79,6 +79,46 @@
           <p> Ankara is capital city of Turkey</p>
           <p>Ankara has a castle</p> 
         </div>
+
+   <div> 
+    <h1> Kullanıcı Hesabı</h1>
+
+    <form id="userForm"> 
+        <label for="fname"> First Name:
+        </label>
+        <input type="textid="fname name="fname"> <br>
+        <label for="lname"> last name:</label> 
+        <input type="text"id="lname" name="lanme">
+        <input type="submit" value="Submit" >
+        <br>
+    </form> 
+    </div> 
+
+   <script>
+    const form = document.getElementById("userForm")    
+
+    form.addEventListener('submit', function(event){
+        const firstName =document.getElementById("fname").value.trim();
+        const lastName =document.getElementById("lname").value.trim();
+
+        if(!firstName || !lastName ) {
+            alert("Lütfen tüm alanları doldurun")
+            return;
+        }
+
+        console.log("veriler bacende gönderliyor...");
+        console.log("First Name:". firstName);
+        console.log("Last Name: ",lastName);
+        alert("Merhaba ${firstName} {lastName}, verilerinez başarıyla gönderildi!");
+    })
+   </script>
+
+
+   <footer id="iletişim">
+    <p>&copy; 2024 Web Tasaramı Haber Sitesi | Tüm Hakları Saklıdır. </p>
+    <p> <a href="mailto:info@webhaber.com" style="color: #fff;"></a> </p>
+   </footer>
     </body>
+
     
 </html>
