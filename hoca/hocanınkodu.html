@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tasarımı Haber Sitesi</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- script.js dosyası defer ile dahil edildi -->
+</head>
+<body>
+    <header>
+        <h1>Web Tasarımı Haber Sitesi</h1>
+        <p>En güncel haberler, analizler ve bilgiler...</p>
+    </header>
+
+    <nav>
+        <a href="#spor">Spor</a>
+        <a href="#istatistik">İstatistik</a>
+        <a href="#tablo">Tablolar</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <main>
+       <div class="row"> <!-- İlk satır: Spor Haberleri ve Türkiye İşsizlik Oranı -->
+            <div class="column wide-column"> <!-- Spor Haberleri daha geniş bir sütunda -->
+                <section id="spor" class="news-block">
+                    <h2>Spor Haberleri</h2>
+                    <p><b>Futbol, Basketbol, Voleybol</b> branşlarından en güncel gelişmeler...</p>
+                    <blockquote>
+                        "Galatasaray, Fenerbahçe derbisi nefes kesti. 2-2 sona eren mücadele yılın maçı oldu!"
+                    </blockquote>
+                    <a href="https://www.milliyet.com.tr/" target="_blank">Daha fazla haber için tıklayın</a>
+                </section>
+            </div>
+            <div class="column"> <!-- Türkiye İşsizlik Oranı dar sütunda -->
+                <section id="istatistik" class="news-block">
+                    <h2>Türkiye İşsizlik Oranı</h2>
+                    <p>
+                        <abbr title="Türkiye İstatistik Kurumu">TÜİK</abbr> verilerine göre:
+                    </p>
+                    <blockquote>
+                        2024 yılı Ağustos ayında işsizlik oranı %8.5 seviyesine düştü. 
+                        Erkeklerde %7,0; kadınlarda ise <mark>%11,4</mark> olarak tahmin edildi.
+                    </blockquote>
+                </section>
+            </div>
+        </div>
+
+
+        <div class="row"> <!-- İkinci satır: Araba Markaları, Kişisel Bilgiler ve Kullanıcı Hesabı -->
+            <div class="column">
+                <section id="tablo" class="news-block">
+                    <h2>Araba Markaları</h2> <!-- Araba markaları tablosu başlığı -->
+                    <table class="red-border">
+                        <tr>
+                            <th>Resim</th> <!-- Tablo sütunu başlığı -->
+                            <th>Marka 1</th>
+                            <th>Marka 2</th>
+                        </tr>
+                        <tr>
+                            <td><img src="image/araba.jpg" alt="Kırmızı araba" width="80"></td> <!-- Resim hücresi -->
+                            <td>Ford</td> <!-- Marka bilgisi -->
+                            <td>Mercedes</td> <!-- Marka bilgisi -->
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>BMW</td> <!-- Marka bilgisi -->
+                            <td>Audi</td> <!-- Marka bilgisi -->
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="column">
+                <section id="tablo" class="news-block">
+                    <h2>Kişisel Bilgiler</h2> <!-- Kişisel bilgiler tablosu başlığı -->
+                    <table class="blue-border">
+                        <tr>
+                            <th>Kişi</th> <!-- Tablo sütunu başlığı -->
+                            <th>Yaş</th>
+                            <th>Meslek</th>
+                        </tr>
+                        <tr>
+                            <td>Ali</td>
+                            <td>25</td>
+                            <td>Mühendis</td>
+                        </tr>
+                        <tr>
+                            <td>Ece</td>
+                            <td>30</td>
+                            <td>Öğretmen</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="column">
+                <section id="user-form" class="form-section">
+                    <h2>Kullanıcı Hesabı</h2> <!-- Form başlığı -->
+                    <form id="userForm">
+                        <label for="fname">Ad:</label> <!-- Ad alanı etiketi -->
+                        <input type="text" id="fname" name="fname"> <!-- Ad giriş alanı -->
+
+                        <label for="lname">Soyad:</label> <!-- Soyad alanı etiketi -->
+                        <input type="text" id="lname" name="lname"> <!-- Soyad giriş alanı -->
+
+                        <input type="submit" value="Gönder"> <!-- Gönder butonu -->
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer id="iletisim">
+        <p>&copy; 2024 Web Tasarımı Haber Sitesi | Tüm Hakları Saklıdır.</p> <!-- Telif hakkı bilgisi -->
+        <p><a href="mailto:info@webhaber.com" style="color: #fff;">Bize Ulaşın</a></p> <!-- İletişim bağlantısı -->
+    </footer>
+</body>
+</html>

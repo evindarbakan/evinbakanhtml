@@ -1,0 +1,174 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif; /* Sayfa genelinde Arial yazı tipi kullanılır, Arial yoksa sans-serif devreye girer */
+    margin: 0; /* Sayfanın varsayılan kenar boşlukları sıfırlanır */
+    padding: 0; /* Sayfanın varsayılan iç boşlukları sıfırlanır */
+    line-height: 1.6; /* Satırlar arası boşluk 1.6 kat olarak ayarlanır */
+    background-color: #f9f9f9; /* Sayfa arka plan rengi açık gri olarak ayarlanır */
+    color: #333; /* Yazı rengi koyu gri yapılır */
+}
+
+header {
+    background-color: #004080; /* Başlık kısmının arka planı koyu mavi yapılır */
+    color: white; /* Başlık kısmındaki yazılar beyaz yapılır */
+    text-align: center; /* Yazılar ortalanır */
+    padding: 1rem; /* Başlık bölümüne 1 birim iç boşluk eklenir */
+}
+
+nav {
+    background-color: #0073e6; /* Navigasyon çubuğu arka plan rengi açık mavi yapılır */
+    padding: 0.5rem; /* Navigasyon çubuğuna 0.5 birim iç boşluk eklenir */
+    text-align: center; /* Bağlantılar ortalanır */
+}
+
+nav a {
+    color: white; /* Navigasyon bağlantılarının rengi beyaz yapılır */
+    text-decoration: none; /* Alt çizgi kaldırılır */
+    margin: 0 1rem; /* Bağlantılar arasında yatayda 1 birim boşluk bırakılır */
+    font-weight: bold; /* Bağlantı yazıları kalın yapılır */
+}
+
+main {
+    padding: 2rem; /* Ana içeriğe 2 birim iç boşluk eklenir */
+    background-color: white; /* Ana içerik arka planı beyaz yapılır */
+    margin: 1rem auto; /* Üst ve alt kenarlardan 1 birim boşluk, yatayda ortalama */
+    width: 80%; /* Ana içeriğin genişliği sayfa genişliğinin %80'i kadar yapılır */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* İçeriğin etrafına hafif bir gölge eklenir */
+}
+
+h1, h2 {
+    color: #004080; /* Ana başlıkların rengi koyu mavi yapılır */
+}
+
+h3 {
+    text-align: center; /* Üçüncü seviyedeki başlıklar ortalanır */
+    color: #0073e6; /* Renk açık mavi yapılır */
+    margin-top: 1.5rem; /* Başlığın üst kısmına 1.5 birim boşluk eklenir */
+}
+
+.news-block {
+    margin-bottom: 1.5rem; /* Haber bloklarının altına 1.5 birim boşluk eklenir */
+    border-bottom: 1px solid #ddd; /* Alt kısma ince bir gri çizgi eklenir */
+    padding-bottom: 1rem; /* Alt kısmına 1 birim iç boşluk eklenir */
+}
+
+.news-block p {
+    margin: 0.5rem 0; /* Paragrafların üst ve altına 0.5 birim boşluk eklenir */
+}
+
+/* Tablolar */
+table {
+    border-collapse: collapse; /* Tablodaki kenar çizgileri birleştirilir */
+    margin-top: 1rem; /* Tabloların üstüne 1 birim boşluk eklenir */
+}
+
+th, td {
+    padding: 0.5rem; /* Hücrelere 0.5 birim iç boşluk eklenir */
+    text-align: center; /* İçerik ortalanır */
+    border: 2px solid; /* Hücrelerin kenarlarına 2 piksel genişliğinde çizgi eklenir */
+}
+
+/* Araba Markaları Tablosu */
+.red-border {
+    width: 90%; /* Tablo genişliği %90 yapılır */
+}
+
+.red-border th, .red-border td {
+    border-color: red; /* Tablo hücre kenarları kırmızı yapılır */
+}
+
+/* Kişisel Bilgiler Tablosu */
+.blue-border {
+    width: 90%; /* Tablo genişliği %90 yapılır */
+}
+
+.blue-border th, .blue-border td {
+    border-color: blue; /* Tablo hücre kenarları mavi yapılır */
+}
+
+footer {
+    text-align: center; /* Alt bilgi yazıları ortalanır */
+    padding: 1rem; /* İçeriğe 1 birim iç boşluk eklenir */
+    background-color: #004080; /* Arka plan rengi koyu mavi yapılır */
+    color: white; /* Yazı rengi beyaz yapılır */
+}
+
+footer a {
+    color: white; /* Alt bilgi bağlantılarının rengi beyaz yapılır */
+    text-decoration: none; /* Alt çizgi kaldırılır */
+}
+
+div {
+    width: 300px; /* Div genişliği 300 piksel olarak sabitlenir */
+    margin: auto; /* Div'i yatayda ortalar */
+}
+
+/* Row ve Column yapısı */
+.row {
+    display: flex; /* Elemanları yan yana düzenler */
+    gap: 1rem; /* Sütunlar arasında boşluk bırakır */
+    margin-bottom: 2rem; /* Satırların altına boşluk ekler */
+}
+
+.column {
+    flex: 1; /* Sütun genişliklerini eşit yapar */
+    padding: 1rem; /* İç boşluk ekler */
+    background-color: #fff; /* Beyaz arka plan rengi */
+    border-radius: 5px; /* Yuvarlak kenarlar */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+}
+
+/* Daha geniş sütun için */
+.wide-column {
+    flex: 2; /* Bu sütun diğerlerinden iki kat geniş olur */
+}
+
+/* Genel Form Yapısı */
+form {
+    display: flex; /* Form elemanlarını yatay/dikey hizalamak için kullanılır */
+    flex-direction: column; /* Elemanları dikey olarak hizalar */
+    gap: 1rem; /* Form elemanları arasında boşluk bırakır */
+}
+
+/* Form Grupları */
+.form-group {
+    display: flex; /* Her form grubu yatay olarak hizalanır */
+    align-items: center; /* Etiket ve giriş alanı ortalanır */
+    justify-content: space-between; /* Etiket ve giriş alanı arasında boşluk bırakılır */
+}
+
+/* Etiketler */
+.form-group label {
+    flex: 1; /* Etiket genişliği sabitlenir */
+    font-weight: bold; /* Etiketler kalın yapılır */
+    text-align: left; /* Etiketler sola hizalanır */
+    margin-right: 1rem; /* Etiket ile giriş alanı arasında boşluk bırakılır */
+}
+
+/* Giriş Alanları */
+.form-input {
+    flex: 2; /* Giriş alanı genişliği artırılır */
+    padding: 0.5rem; /* İçerik boşluğu eklenir */
+    border: 1px solid #ccc; /* Kenarlık rengi belirlenir */
+    border-radius: 5px; /* Kenarlar yuvarlatılır */
+    font-size: 1rem; /* Yazı boyutu belirlenir */
+    width: 100%; /* Giriş alanının genişliği ayarlanır */
+}
+
+/* Responsive Tasarım: Küçük Ekranlar */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; /* Mobilde her eleman alt alta gelir */
+        align-items: flex-start; /* Elemanlar sola hizalanır */
+    }
+
+    .form-group label {
+        margin-right: 0; /* Etiket ile giriş alanı arasındaki boşluk kaldırılır */
+        margin-bottom: 0.5rem; /* Etiketin altında boşluk bırakılır */
+    }
+
+    .form-input {
+        width: 100%; /* Mobilde tam genişlik kullanılır */
+    }
+}
+
