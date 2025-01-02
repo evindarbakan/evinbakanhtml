@@ -1,10 +1,10 @@
 /* 1 renk özelliği */
-h1 {
-    color: blue; /* Mavi
-
+h1 { color: #004080;}
+    
+   
 /* Paragrafın arka plan rengini RGB ile ayarlanarak yapılan */
 p {
-    background-color: rgb(255, 229, 204); /* RGB değeriyle */
+      background-color: rgb(75, 2, 2); /* RGB değeriyle */
 }
 
 /* HEX */
@@ -89,12 +89,12 @@ th, td {
 footer {
     text-align: center; /* Alt bilgi yazıları ortalanır */
     padding: 1rem; /* İçeriğe 1 birim iç boşluk eklenir */
-    background-color: #004080; /* Arka plan rengi koyu mavi yapılır */
+    background-color: #201212; /* Arka plan rengi koyu mavi yapılır */
     color: white; /* Yazı rengi beyaz yapılır */
 }
 
 footer a {
-    color: white; /* Alt bilgi bağlantılarının rengi beyaz yapılır */
+    color: rgb(29, 17, 17); /* Alt bilgi bağlantılarının rengi beyaz yapılır */
     text-decoration: none; /* Alt çizgi kaldırılır */
 }
 
