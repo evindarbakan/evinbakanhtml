@@ -1,174 +1,134 @@
-/* 1 renk özelliği */
-h1 { color: #004080;}
-    
-   
-/* Paragrafın arka plan rengini RGB ile ayarlanarak yapılan */
-p {
-      background-color: rgb(75, 2, 2); /* RGB değeriyle */
-}
+/* styles.css */
 
-/* HEX */
-.highlight-text {
-    color: #ff5733; /* HEX koduyla yazı rengi */
-}
-/* Genel Stil */
+/* Genel Ayarlar */
 body {
-    font-family: Arial, sans-serif; /* Sayfa genelinde Arial yazı tipi kullanılır, Arial yoksa sans-serif devreye girer */
-    margin: 0; /* Sayfanın varsayılan kenar boşlukları sıfırlanır */
-    padding: 0; /* Sayfanın varsayılan iç boşlukları sıfırlanır */
-    line-height: 1.6; /* Satırlar arası boşluk 1.6 kat olarak ayarlanır */
-    background-color: #f9f9f9; /* Sayfa arka plan rengi açık gri olarak ayarlanır */
-    color: #333; /* Yazı rengi koyu gri yapılır */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #004080; /* Başlık kısmının arka planı koyu mavi yapılır */
-    color: white; /* Başlık kısmındaki yazılar beyaz yapılır */
-    text-align: center; /* Yazılar ortalanır */
-    padding: 1rem; /* Başlık bölümüne 1 birim iç boşluk eklenir */
+/* Header Stilleri */
+.header {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    padding: 2rem; /* Ana içeriğe 2 birim iç boşluk eklenir */
-    background-color: white; /* Ana içerik arka planı beyaz yapılır */
-    margin: 1rem auto; /* Üst ve alt kenarlardan 1 birim boşluk, yatayda ortalama */
-    width: 80%; /* Ana içeriğin genişliği sayfa genişliğinin %80'i kadar yapılır */
-    box-shadow: 0 0 10px rgba(98, 65, 65, 0.1); /* İçeriğin etrafına hafif bir gölge eklenir */
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-h1, h2 {
-    color: #8e0101; /* Ana başlıkların rengi koyu kırmızı yapılır */
+.header .logo span {
+    color: #ff5733;
 }
 
-h3 {
-    text-align: center; /* Üçüncü seviyedeki başlıklar ortalanır */
-    color: #f60505; /* Renk açık kırmızı yapılır */
-    margin-top: 1.5rem; /* Başlığın üst kısmına 1.5 birim boşluk eklenir */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.news-block {
-    margin-bottom: 1.5rem; /* Haber bloklarının altına 1.5 birim boşluk eklenir */
-    border-bottom: 1px solid #ddd; /* Alt kısma ince bir gri çizgi eklenir */
-    padding-bottom: 1rem; /* Alt kısmına 1 birim iç boşluk eklenir */
+.navigation ul li {
+    margin: 0 10px;
 }
 
-.news-block p {
-    margin: 0.5rem 0; /* Paragrafların üst ve altına 0.5 birim boşluk eklenir */
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-/* Tablolar */
-table {
-    border-collapse: collapse; /* Tablodaki kenar çizgileri birleştirilir */
-    margin-top: 1rem; /* Tabloların üstüne 1 birim boşluk eklenir */
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
 }
 
-th, td {
-    padding: 0.5rem; /* Hücrelere 0.5 birim iç boşluk eklenir */
-    text-align: center; /* İçerik ortalanır */
-    border: 2px solid; /* Hücrelerin kenarlarına 2 piksel genişliğinde çizgi eklenir */
+.hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
 }
 
-/* Araba Markaları Tablosu */
-.red-border {
-    width: 90%; /* Tablo genişliği %90 yapılır */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.red-border th, .red-border td {
-    border-color: red; /* Tablo hücre kenarları kırmızı yapılır */
+.hero-text h2 {
+    font-size: 36px;
 }
 
-/* Kişisel Bilgiler Tablosu */
-.blue-border {
-    width: 90%; /* Tablo genişliği %90 yapılır */
+.hero-text p {
+    font-size: 18px;
 }
 
-.blue-border th, .blue-border td {
-    border-color: blue; /* Tablo hücre kenarları mavi yapılır */
+.author {
+    font-size: 12px;
+    color: #ddd;
 }
 
-footer {
-    text-align: center; /* Alt bilgi yazıları ortalanır */
-    padding: 1rem; /* İçeriğe 1 birim iç boşluk eklenir */
-    background-color: #201212; /* Arka plan rengi koyu mavi yapılır */
-    color: white; /* Yazı rengi beyaz yapılır */
+/* Featured Section */
+.featured {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    margin: 20px 0;
 }
 
-footer a {
-    color: rgb(29, 17, 17); /* Alt bilgi bağlantılarının rengi beyaz yapılır */
-    text-decoration: none; /* Alt çizgi kaldırılır */
+.featured .cta {
+    background: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-div {
-    width: 300px; /* Div genişliği 300 piksel olarak sabitlenir */
-    margin: auto; /* Div'i yatayda ortalar */
+/* Articles Section */
+.articles {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-/* Row ve Column yapısı */
-.row {
-    display: flex; /* Elemanları yan yana düzenler */
-    gap: 1rem; /* Sütunlar arasında boşluk bırakır */
-    margin-bottom: 2rem; /* Satırların altına boşluk ekler */
+.articles article {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
 }
 
-.column {
-    flex: 1; /* Sütun genişliklerini eşit yapar */
-    padding: 1rem; /* İç boşluk ekler */
-    background-color: #fff; /* Beyaz arka plan rengi */
-    border-radius: 5px; /* Yuvarlak kenarlar */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+.articles article img {
+    width: 100%;
+    border-radius: 5px;
 }
 
-/* Daha geniş sütun için */
-.wide-column {
-    flex: 2; /* Bu sütun diğerlerinden iki kat geniş olur */
+.articles h3 {
+    font-size: 18px;
+    color: #ff5733;
 }
 
-/* Genel Form Yapısı */
-form {
-    display: flex; /* Form elemanlarını yatay/dikey hizalamak için kullanılır */
-    flex-direction: column; /* Elemanları dikey olarak hizalar */
-    gap: 1rem; /* Form elemanları arasında boşluk bırakır */
+.articles p {
+    font-size: 14px;
 }
 
-/* Form Grupları */
-.form-group {
-    display: flex; /* Her form grubu yatay olarak hizalanır */
-    align-items: center; /* Etiket ve giriş alanı ortalanır */
-    justify-content: space-between; /* Etiket ve giriş alanı arasında boşluk bırakılır */
+/* Footer Stilleri */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    margin-top: 20px;
 }
-
-/* Etiketler */
-.form-group label {
-    flex: 1; /* Etiket genişliği sabitlenir */
-    font-weight: bold; /* Etiketler kalın yapılır */
-    text-align: left; /* Etiketler sola hizalanır */
-    margin-right: 1rem; /* Etiket ile giriş alanı arasında boşluk bırakılır */
-}
-
-/* Giriş Alanları */
-.form-input {
-    flex: 2; /* Giriş alanı genişliği artırılır */
-    padding: 0.5rem; /* İçerik boşluğu eklenir */
-    border: 1px solid #ccc; /* Kenarlık rengi belirlenir */
-    border-radius: 5px; /* Kenarlar yuvarlatılır */
-    font-size: 1rem; /* Yazı boyutu belirlenir */
-    width: 100%; /* Giriş alanının genişliği ayarlanır */
-}
-
-/* Responsive Tasarım: Küçük Ekranlar */
-@media (max-width: 768px) {
-    .form-group {
-        flex-direction: column; /* Mobilde her eleman alt alta gelir */
-        align-items: flex-start; /* Elemanlar sola hizalanır */
-    }
-
-    .form-group label {
-        margin-right: 0; /* Etiket ile giriş alanı arasındaki boşluk kaldırılır */
-        margin-bottom: 0.5rem; /* Etiketin altında boşluk bırakılır */
-    }
-
-    .form-input {
-        width: 100%; /* Mobilde tam genişlik kullanılır */
-    }
-}
-
