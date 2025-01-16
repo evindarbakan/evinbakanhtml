@@ -132,3 +132,36 @@ body {
     color: #fff;
     margin-top: 20px;
 }
+.table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e; /* Siyah arka plan */
+    color: #fff; /* Beyaz yazı rengi */
+    border: 1px solid #ff3333; /* Kırmızı kenarlık */
+    font-family: 'Arial', sans-serif;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ff3333; /* Kırmızı alt çizgiler */
+}
+
+.table thead {
+    background-color: #ff3333; /* Kırmızı üst başlık arka planı */
+    color: #fff; /* Beyaz yazı rengi */
+}
+
+.table tbody tr:hover {
+    background-color: #333; /* Satır üstüne gelince koyu gri arka plan */
+}
+
+.table th {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 1rem;
+}
