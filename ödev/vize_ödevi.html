@@ -1,22 +1,31 @@
 <!-- vize_odevi.html -->
-<!DOCTYPE html>
-<html lang="tr">
+<!DOCTYPE html> <!--sayfanın bir html sayfası olduğunu belirtir-->
+<html lang="tr"> <!--sayfanın dilinin türkçe olduğunu belirtir-->
 <head>
-    <meta charset="UTF-8">
+    <!-- Türkçe karakterlerin doğru görüntülenmesi için kullanılıyor -->
+    <meta charset="UTF-8"> 
+    <!-- Mobil cihazlar için uyumlu bir görüntüleme sağlanması amacıyla ekran genişliği ve ölçek ayarlandı -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tarayıcı sekmesinde görünen favicon (ikon) dosyası bağlandı -->
     <link rel="icon" type="image/x-icon" href="Parr News Logo Alpha.png">
+    <!-- Sayfa başlığı -->
     <title>Parr News</title>
+     <!-- Harici CSS dosyasının bağlanması -->
     <link rel="stylesheet" href="styles_vize ödevi.css">
 </head>
 <body>
     <!-- Header Section -->
+     <!-- Header Bölümü Başlangıcı olan kısım -->
+     <!--class etiketleri ile CSS'de özellikler tanımladığımız bölümleri çağırıyoruz -->
     <header class="header">
+        <!-- Logonun ve site isminin bulunduğu bölüm eklemek için -->
         <div class="logo">
-            <h1>Parr<span>News</span></h1>
+            <h1>Parr<span>News</span></h1> <!-- "Parr" ve "News" kelimeleri görsel olarak ayrıldı -->
         </div>
+        <!-- Gezinti menüsü -->
         <nav class="navigation">
             <ul>
-                <li><a href="#aktuel">Aktüel Yayın</a></li>
+                <li><a href="#aktuel">Aktüel Yayın</a></li> <!-- Kullanıcıyı sayfa içindeki ilgili bölüme götürür -->
                 <li><a href="#spot">Spot Yayın</a></li>
                 <li><a href="#so">Parr 24</a></li>
                 <li><a href="#english">English</a></li>
@@ -25,45 +34,54 @@
         </nav>
     </header>
 
-    <!-- Main Content Section -->
+    <!-- Ana İçerik Bölümü -->
     <main>
+        <!-- Hero (Öne Çıkan) Bölüm -->
         <section class="hero">
-            <img src="sahibinden kiralık dert.png" alt="Hero Image">
+            <!-- Başlık görseli -->
+            <img src="sahibinden kiralık dert.png" alt="Hero Image"> <!-- Kullanıcıya görsel hakkında bilgi vermek için -->
             <div class="hero-text">
-                <h2>Sahibinden Kiralık Dert</h2>
+                <h2>Sahibinden Kiralık Dert</h2> <!-- Haber başlığı eklemek için -->
                 <p>Yüksek enflasyon sonucu artan kira bedelleri kiracılarla
                     ev sahiplerini karşı karşıya getiriyor. Şiddete varan gerilimler
-                    adliyede sonuçlanıyor. Yargıda biriken yük gerilimi daha da arttırıyor.
-                    <mark> <b>Yüzde 25</b> </mark> artış sınırlaması gerçekten uygulanıyor mu?
+                    adliyede sonuçlanıyor. Yargıda biriken yük gerilimi daha da arttırıyor. <!-- Haber özetinin eklenmesi -->
+                    <mark> <b>Yüzde 25</b> </mark> artış sınırlaması gerçekten uygulanıyor mu? <!-- Vurgulama için "mark" etiketi kullanıldı -->
                     Çözüm yargı da mı yoksa ekonomi de mi?</p>
-                <p class="author">Parr News | 14 Ocak 2025 | 2 min read</p>
+                <p class="author">Parr News | 14 Ocak 2025 | 2 min read</p> <!-- Haberin kim tarafından yüklenildiği, Haber tarihi ve okuma süresi -->
             </div>
         </section>
 
+        <!-- Yeni Sezon Bölümü -->
+
         <section class="featured">
-            <h2>Parr News’te Yeni Sezon Başladı</h2>
-            <h4>İlk bölüm "Kül Hasadı" Youtube’da yayında.</h4> <br>
+            <h2><i>Parr News</i>’te Yeni Sezon Başladı</h2> <!--'i' etiketi kullanılarak Parr News italik yapıldı-->
+            <h4>İlk bölüm "Kül Hasadı" Youtube’da yayında.</h4> <br><!--buton kısmının alk satıra geçmesi için 'br' etiketi kullanıldı-->
+            <!-- Kullanıcıyı sayfanın içinde kalarak başka bir kısmına yönlendiren buton -->
             <button class="cta" onclick="location.href='#Kül-Hasadı'">Şimdi İzleyin</button>
         </section>
-
+        
+        <!-- Haber Makaleleri -->
         <section class="articles">
+            <!-- İlk makale -->
             <article>
-                <img src="freelance gazetecilik.jpg" alt="Freelance Gazetecilik">
+                <img src="freelance gazetecilik.jpg" alt="Freelance Gazetecilik"> <!--'img src' ve 'alt' etiketleri ile görsel ve alt bilgi ekliyoruz-->
                 <h3>Freelance Gazetecilik - "İşsiz Gazeteciliğin Yeni Adı"</h3>
                 <p>Türkiye'de birçok sektörde gittikçe artan esnek, güvencesiz ve bireysel çalışma koşulları medya alanında da kendini gösteriyor. 
                     Gazetecilerin gözünden Serbest gazetecilik nedir?
                     Gazetecilerin mesleki hakları gazeteciliği, medya özgürlüğünü ve Türkiye'deki demokratik alanı nasıl etkilemektedir?</p>
                 <p class="author">Parr News | 14 Ocak 2025 | 2 min read</p>
+            <!-- İkinci makale -->
             </article>
             <article>
-                <img src="Babamdan Miras.jpg" alt="Babamdan Miras">
+                <img src="Babamdan Miras.jpg" alt="Babamdan Miras"> <!--'img src' ve 'alt' etiketleri ile görsel ve alt bilgi ekliyoruz-->
                 <h3>Babamdan Miras</h3>
                 <p>Sigortasız çalışma kuşaklar arası miras olarak devam ediyor.
                     <h5>Soru:</h5> Anlatılan kimin hikayesi?</p>
                 <p class="author">Parr News | 14 Ocak 2025 | 2 min read</p>
+            <!-- Üçüncü makale -->
             </article>
             <article id="Kül-Hasadı">
-                <img src="Kül Hasadı.jpg" alt="Kül Hasadı">
+                <img src="Kül Hasadı.jpg" alt="Kül Hasadı"> <!--'img src' ve 'alt' etiketleri ile görsel ve alt bilgi ekliyoruz-->
                 <h3>Kül Hasadı</h3>
                 <p>Türkiye'de son yıllarda gelişen siyasi, ekonomik ve kültürel değişimler toplumsal yaşamı derinden etkiliyor.
                     Salgının etkisiyle daha da hızlanan etkiler, toplumsal yaşamı neredeyse "kül"e çevirmiş durumda.
@@ -71,15 +89,42 @@
                 <p class="author">Parr News | 9 Nisan 2025 | 13 min read</p>
             </article>
         </section>
-    </main>
-          <blockquote>
+
+<!-- Oynatma Listesi başlıklı bir tablo oluşturduk tr etiketleri tabloya satır eklememize 
+         th etiketi tablonun başlıklarını belirler, td etiketi toblodaki veri hücrelerini belirtir.-->
+        <section class="featured">
+            <h1>Oynatma Listeleri</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Liste</th>
+                        <th>İçerik Detayı</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Parr 24</td>
+                        <td>Gündeme ilişkin en sıcak ve yeni içerikler</td>
+                    </tr>
+                    <tr>
+                        <td>Parr DOC</td>
+                        <td>Toplumsal konular ve hikayeler en çarpıcı şekilde belgeselleştirilmiştir.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main> <!--belgenin en önemli ve eşsiz kısmını kapsayayn ve genellikle başlıklar,
+     makaleler veya temel bilgiler gibi içerikleri barındıran kısımları belirtmek için kullanıldı.-->
+          <blockquote> <!--alıntı yapmak için kullanılmıştır-->
             <p>"Gerçek habercilik, <mark>halkı aydınlatmak</mark> ve doğruyu <br>
                 söylemektir. Gerçek habercilik, sadece doğruyu <br> 
                 yazmak değil, doğruyu aramaktır."</p>
             <footer>-<i> Uğur Mumcu </i> </footer>
           </blockquote>
           <!-- <a>: Bağlantıyı oluşturmak için kullanılan etiket.
-href="https://www.google.com": Bağlantının gideceği adresi belirtir. Burada Google'ın web sitesi adresi kullanılmıştır.
+href="https://www.google.com": Bağlantının gideceği adresi belirtir. Burada  Parr News'in Youtube kanalının  adresi kullanılmıştır.
 target="_blank": Bu özellik, bağlantının yeni bir sekmede açılmasını sağlar. Eğer yeni sekme açılmasını istemiyorsak bu özelliği kaldırabiliriz.
 Google'a Git: Bağlantı metni. Bu metin, kullanıcıya gösterilen tıklanabilir yazıdır.-->
           <a href="https://www.youtube.com/@ParrNews/featured" target="_blank">Kanalın Youtube sayfasına git</a>
