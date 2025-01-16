@@ -2,117 +2,117 @@
 
 /* Genel Ayarlar */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    margin: 0;/* Sayfa kenar boşluklarını sıfırlar */
+    font-family: Arial, sans-serif;/* Yazı tipi olarak Arial kullanır, desteklenmezse sans-serif kullanılır */
+    line-height: 1.6; /* Satırlar arasındaki boşluğu ayarlar */
+    color: #333; /* Yazı rengini koyu gri yapar */
+    background-color: #f4f4f4; /* Arka plan rengini açık gri yapar */
 }
 
 /* Header Stilleri */
 .header {
-    background: #000;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #000;/*  Başlık alanının arka planını siyah yapar */
+    color: #fff;/* Başlık alanındaki metinleri beyaz yapar */
+    padding: 10px 20px; /* İçerik etrafına iç boşluk ekler (üst/alt: 10px, sağ/sol: 20px) */
+    display: flex; /* Flexbox düzenini etkinleştirir */
+    justify-content: space-between; /* İçeriği yatayda iki uca yayar */
+    align-items: center; /* İçeriği dikeyde ortalar */
 }
 
 .header .logo h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 0; /* Başlık etrafındaki boşluğu sıfırlar */
+    font-size: 24px;/* Başlık yazı boyutunu belirler */
 }
 
 .header .logo span {
-    color: #ff5733;
+    color: #ff5733; /* Logo içinde vurgulanan metni kırmızı/turuncu yapar */
 }
 
 .navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    list-style: none; /* Liste işaretlerini kaldırır */
+    margin: 0;/* Listenin dış boşluklarını sıfırlar */
+    padding: 0; /* Listenin iç boşluklarını sıfırlar */
+    display: flex; /* Liste elemanlarını yatayda sıralar */
 }
 
 .navigation ul li {
-    margin: 0 10px;
+    margin: 0 10px; /* Her bir liste elemanına sağ ve sol boşluk ekler */
 }
 
 .navigation ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
+    color: #fff; /* Bağlantıların rengini beyaz yapar */
+    text-decoration: none; /* Bağlantı altındaki çizgiyi kaldırır */
+    font-size: 14px; /* Bağlantı yazı boyutunu belirler */
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
-    text-align: center;
-    color: #fff;
-}
+    position: relative; /* Konumlandırmayı bağlamı içinde ayarlar */
+    text-align: center; /* Metni ortalar */
+    color: #fff; /* Metin rengini beyaz yapar */
+}/
 
 .hero img {
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
+    width: 100%;/* Resmi tam genişlikte yapar */
+    height: auto; /* Resmin yüksekliğini oranlı olarak ayarlar */
+    opacity: 0.8; /* Resmi hafif şeffaf yapar */
 }
 
 .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute; /* Metni resmin üstüne yerleştirir */
+    top: 50%; /* Metni dikeyde ortalar */
+    left: 50%;/* Metni yatayda ortalar */
+    transform: translate(-50%, -50%); /* Kesin ortalama için kullanılır */
 }
 
 .hero-text h2 {
-    font-size: 36px;
+    font-size: 36px; /* Başlık boyutunu belirler */
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 18px; /* Paragraf yazı boyutunu belirler */
 }
 
 .author {
-    font-size: 12px;
-    color: #ddd;
+    font-size: 12px; /* Yazar metni boyutunu belirler */
+    color: #ddd; /* Yazar metnini açık gri yapar */
 }
 
 /* Featured Section */
 .featured {
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    margin: 20px 0;
+    padding: 20px; /* İçerik etrafına iç boşluk ekler */
+    text-align: center; /* Metni ortalar */
+    background: #fff; /*Arka plan rengini beyaz yapar */
+    margin: 20px 0; /* Bölümün üst ve altına dış boşluk ekler */
 }
 
 .featured .cta {
     background: #ff5733;
     color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    border: none; /* Butonun çerçevesini kaldırır */
+    padding: 10px 20px; /* Buton etrafına iç boşluk ekler */
+    cursor: pointer; /* İmleç üzerinde el simgesi gösterir */
     font-size: 16px;
 }
 
 /* Articles Section */
 .articles {
-    display: flex;
-    justify-content: space-around;
+    display: flex; /* İçeriği yatayda sıralar */
+    justify-content: space-around; /* Elemanlar arasında eşit boşluk bırakır */
     padding: 20px;
 }
 
 .articles article {
-    background: #fff;
+    background: #fff; 
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 30%;
+    border-radius: 5px; /* Köşeleri yuvarlar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekler */
+    width: 30%; /* Makale kutularının genişliğini belirler */
 }
 
 .articles article img {
-    width: 100%;
-    border-radius: 5px;
+    width: 100%; /* Resimleri kutunun genişliğine uyarlar */
+    border-radius: 5px; /* Resimlerin köşelerini yuvarlar */
 }
 
 .articles h3 {
@@ -126,25 +126,25 @@ body {
 
 /* Footer Stilleri */
 .footer {
-    text-align: center;
-    padding: 10px;
-    background: #000;
-    color: #fff;
-    margin-top: 20px;
+    text-align: center; /* Metni ortalar */
+    padding: 10px; /* İçerik etrafına iç boşluk ekler */
+    background: #000; /* Arka plan rengini siyah yapar */
+    color: #fff; /* Metin rengini beyaz yapar */
+    margin-top: 20px; /* Üst tarafa dış boşluk ekler */
 }
 .table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
+    width: 80%;/* Tablo genişliğini belirler */
+    margin: 20px auto;/* Tabloyu ortalar ve üst-alt boşluk ekler */
+    border-collapse: collapse; /* Hücre kenarlarını birleştirir */
     background-color: #1e1e1e; /* Siyah arka plan */
     color: #fff; /* Beyaz yazı rengi */
     border: 1px solid #ff3333; /* Kırmızı kenarlık */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Yazı tipi olarak Arial kullanır */
 }
 
 .table th, .table td {
-    padding: 15px;
-    text-align: left;
+    padding: 15px;/* Hücreler etrafına iç boşluk ekler */
+    text-align: left; /* Metni sola hizalar */
     border-bottom: 1px solid #ff3333; /* Kırmızı alt çizgiler */
 }
 
@@ -158,10 +158,10 @@ body {
 }
 
 .table th {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.2rem; /* Başlık yazı boyutunu belirler */
+    font-weight: bold; /* Başlık yazılarını kalın yapar */
 }
 
 .table td {
-    font-size: 1rem;
+    font-size: 1rem; /* Hücre içi yazı boyutunu belirler */
 }
